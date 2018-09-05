@@ -5,6 +5,7 @@ import javax.swing.JOptionPane;
 public class Principal {
 
     public static void main(String[] args) {
+        //Declara a pilha
         Stack<No> pilha = new Stack<>();
 
         //Menu para controle da lista
