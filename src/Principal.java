@@ -15,7 +15,7 @@ public class Principal {
                     + "1 - Empilhar\n"
                     + "2 - Desempilhar\n"
                     + "3 - Consultar\n"
-                    + "4 - Consultar Topo\n"
+                    + "4 - Mostrar Topo\n"
                     + "5 - Contar\n"
                     + "6 - Listar\n"
                     + "9 - Sair\n"));
