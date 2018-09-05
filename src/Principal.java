@@ -21,13 +21,18 @@ public class Principal {
                     + "9 - Sair\n"));
             switch (opcao) {
                 case 1: {
-                    int dado = Integer.parseInt(JOptionPane.showInputDialog("Digite o dado"));
+                    int dado = Integer.parseInt(JOptionPane.showInputDialog("Digite o dado a ser empilhado"));
                     No novo = new No(dado);
                     pilha.push(novo);
                     break;
                 }
-                case 2: {
-                    pilha.pop();
+                case 2: {                    
+                    No dado = pilha.pop();
+                    if (dado != null) {
+                        JOptionPane.showMessageDialog(null, "O nó" + dado.getDado() + " foi desempilhado da pilha com sucesso!");
+                    }  else {
+                        JOptionPane.showMessageDialog(null, "O nó do topo não foi desempilhado");   
+                    }                    
                     break;
                 }
                 case 3: {
